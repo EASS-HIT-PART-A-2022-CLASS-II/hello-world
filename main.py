@@ -4,14 +4,8 @@ import os, sys
 app = FastAPI()
 
 
-@app.get("/aaaa")
-def root(a):
-    eval (a)
-    return "kuku"
-
-
-@app.post("/aaaa")
-def root_post(a):
+@app.post("hello")
+def hello_post(a):
     return {"hello": "world", "a": a}
 
 
